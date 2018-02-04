@@ -5,8 +5,8 @@
   "repository": "https://github.com/KrzysztofLen/accordion.git",
   "license": "MIT",
   "scripts": {
-    "heroku-postinstall": "webpack",
     "start": "node server.js",
+    "postinstall": "webpack",
     "build": "webpack",
     "dev-server": "webpack-dev-server --watch"
   },
