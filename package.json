@@ -5,8 +5,8 @@
   "repository": "https://github.com/KrzysztofLen/accordion.git",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npm install && webpack -p --config ./webpack.config.js --progress",
-	"start": "webpack-dev-server --watch",
+    "postinstall": "webpack -p --config ./webpack.config.js --progress",
+    "start": "node server.js",
     "build": "webpack",
     "dev-server": "webpack-dev-server --watch"
   },
@@ -14,6 +14,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.7",
+    "express": "^4.16.2",
     "file-loader": "^1.1.6",
     "image-webpack-loader": "^3.4.2",
     "node-sass": "^4.7.2",
