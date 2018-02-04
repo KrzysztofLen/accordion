@@ -5,6 +5,7 @@
   "repository": "https://github.com/KrzysztofLen/accordion.git",
   "license": "MIT",
   "scripts": {
+    "postinstall": "webpack -p --config ./webpack.config.js --progress",
 	"start": "webpack-dev-server --watch",
     "build": "webpack",
     "dev-server": "webpack-dev-server --watch"
